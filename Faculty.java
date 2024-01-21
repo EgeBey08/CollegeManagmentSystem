@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Faculty {
     private String name;
     private String location;
-    ArrayList<Department> departmentList = new ArrayList<>();
+    private ArrayList<Department> departmentList = new ArrayList<>();
 
     public String getName(){
         return name;
