@@ -19,6 +19,14 @@ public class University {
         this.location = location;
     }
     //---------------------------------\\
+    public Faculty getFaculty(String facultyName){
+        for(Faculty faculty : facultyList){
+            if(faculty.getName() == facultyName){
+                return faculty;
+            }
+        }
+        return null;
+    }
     public ArrayList<Faculty> getFacultyList(){
         return facultyList;
     }

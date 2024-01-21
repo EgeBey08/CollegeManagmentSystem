@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import PersonInterface.OfficeWorker;
+
+import java.util.UUID;
+
 public class Office {
     private String name;
     private ArrayList<OfficeWorker> officeWorkerList= new ArrayList<>();
@@ -9,8 +14,13 @@ public class Office {
         this.name = name;
     }
     //---------------------------------\\
-    public ArrayList<OfficeWorker> getOfficeWorkerList(){
-        return officeWorkerList;
+    public OfficeWorker getOfficeWorker(UUID id){
+        for(OfficeWorker officeWorker : officeWorkerList){
+            if(officeWorker.getID() == id){
+                return officeWorker;
+            }
+        }
+        return null;
     }
     public void addOfficeWorker(OfficeWorker officeWorker){
         officeWorkerList.add(officeWorker);

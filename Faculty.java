@@ -19,6 +19,14 @@ public class Faculty {
         this.location = location;
     }
     //---------------------------------\\
+    public Department getDepartment(String departmentName){
+        for(Department department : departmentList){
+            if(department.getName() == departmentName){
+                return department;
+            }
+        }
+        return null;
+    }
     public ArrayList<Department> getDepartmentList(){
         return departmentList;
     }
