@@ -20,6 +20,14 @@ public class Department {
         this.location = location;
     }
     //---------------------------------\\
+    public Classroom getClassroom(String classCode){
+        for(Classroom classroom : classroomList){
+            if(classroom.getCode() == classCode){
+                return classroom;
+            }
+        }
+        return null;
+    }
     public ArrayList<Classroom> getClassroomList(){
         return classroomList;
     }
@@ -38,5 +46,13 @@ public class Department {
     }
     public void removeOffice(Office office){
         officeList.add(office);
+    }
+    public Office officeList(String officeName){
+        for(Office office : officeList){
+            if(office.getName() == officeName){
+                return office;
+            }
+        }
+        return null;
     }
 }
