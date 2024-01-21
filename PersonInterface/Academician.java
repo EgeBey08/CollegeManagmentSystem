@@ -1,6 +1,6 @@
 package PersonInterface;
 
-public class Academician {
+public class Academician extends Worker{
     private String mainField;
 
     public String getField(){
