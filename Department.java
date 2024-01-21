@@ -30,7 +30,7 @@ public class Department {
         classroomList.add(clasroom);
     }
     //---------------------------------\\
-    public ArrayList<Office> getOfficeList(){
+    public ArrayList<Office> getOfficeList(){ // diyagramda direk getOffice yazıyordu ben bu şekilde yaptım.
         return officeList;
     }
     public void addOffice(Office office){
