@@ -4,12 +4,20 @@ import java.sql.Date;
 import java.util.UUID;
 
 public class Worker implements IPerson{
-    private UUID id;
+    private String name;
+    private UUID IIID;
     private int salary;
     private Date startingDate;
 
-    public UUID getID(){ // set id olamaz herhalde ?
-        return id;
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    //---------------------------------\\
+    public UUID getID(){ 
+        return IIID;
     }
     //---------------------------------\\
     public int getSalary(){
